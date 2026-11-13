@@ -30,7 +30,8 @@ jobs:
       - name: Extraer proyecto
         run: |
           mkdir proyecto
-          unzip -q ./AnimeBustPhysics-source-modificado.zip -d proyecto
+          unzip -q ./AnimeBustPhysics-source-modificado-v2.zip -d proyecto
+          
           BUILD_FILE=$(find proyecto -name build.gradle -print -quit)
           if [ -z "$BUILD_FILE" ]; then
             echo "No se encontró build.gradle"
